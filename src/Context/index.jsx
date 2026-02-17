@@ -1,18 +1,29 @@
+// src/Contexts/ThemeContext.jsx (ou onde você salvou)
 import { createContext, useContext, useEffect, useState } from "react"
 
-export const ThemeContext = createContext()
+const ThemeContext = createContext()
 
-export function ThemeProvider({ children }) {
-  const [theme, setTheme] = useState("light")
+export const ThemeProvider = ({ children }) => {
+  // Começa verificando se o usuário já tem preferência salva ou usa 'light'
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light")
+
+  const toggleTheme = () => {
+    setTheme((prev) => (prev === "light" ? "dark" : "light"))
+  }
 
   useEffect(() => {
     const root = window.document.documentElement
+    
+    // Remove a classe antiga e adiciona a nova
     root.classList.remove("light", "dark")
     root.classList.add(theme)
+    
+    // Salva no localStorage para lembrar a escolha
+    localStorage.setItem("theme", theme)
   }, [theme])
 
   return (
-    <ThemeContext.Provider value={{ theme, setTheme }}>
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
       {children}
     </ThemeContext.Provider>
   )

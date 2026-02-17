@@ -1,7 +1,11 @@
 import React from 'react';
 import Icons from '../Icons/Index';
+import { useTheme } from '../../Context';
 
-export const Navbar = ({ darkMode, toggleTheme }) => {
+export const Navbar = () => {
+  // Usamos o hook aqui!
+  const { theme, toggleTheme } = useTheme();
+
   return (
     <nav className="fixed w-full z-50 backdrop-blur-md bg-white/70 dark:bg-slate-900/80 border-b border-slate-200 dark:border-slate-800 transition-colors">
       <div className="max-w-6xl mx-auto px-6 h-16 flex justify-between items-center">
@@ -17,7 +21,8 @@ export const Navbar = ({ darkMode, toggleTheme }) => {
             className="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 transition text-slate-600 dark:text-slate-400"
             aria-label="Alternar Tema"
           >
-            {darkMode ? <Icons.Sun /> : <Icons.Moon />}
+            {/* Verifica se o tema é 'dark' para escolher o ícone */}
+            {theme === 'dark' ? <Icons.Sun /> : <Icons.Moon />}
           </button>
         </div>
       </div>

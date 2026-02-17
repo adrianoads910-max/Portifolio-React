@@ -8,11 +8,11 @@ export const About = () => {
           Full Stack Developer
         </div>
         <h1 className="text-4xl md:text-6xl font-extrabold leading-tight text-slate-900 dark:text-white">
-          Unindo precisão <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-500">científica</span> com código moderno.
+          Transformo <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-500">requisitos complexos </span> em aplicações web robustas.
         </h1>
         <p className="text-lg text-slate-600 dark:text-slate-400 max-w-lg leading-relaxed">
           Experiência prática na criação de componentes reutilizáveis e integração de
-sistemas. Transformo requisitos complexos em aplicações web robustas usando 
+sistemas, usando 
           <strong> React, Python e Angular</strong>.
         </p>
         <div className="flex flex-wrap gap-4 pt-4">
@@ -23,8 +23,16 @@ sistemas. Transformo requisitos complexos em aplicações web robustas usando
           >
             <Icons.Download /> Baixar Currículo
           </a>
+          <a 
+            href="https://wa.me/5598988325686"  // <--- COLOQUE SEU NÚMERO AQUI (55 + DDD + NUMERO)
+            target="_blank" 
+            rel="noreferrer" 
+            className="px-6 py-3 border border-slate-300 dark:border-slate-700 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-green-600 dark:hover:text-green-500 transition flex items-center gap-2 font-medium text-slate-700 dark:text-slate-200"
+          >
+            <Icons.WhatsApp /> WhatsApp
+          </a>
           <a href="mailto:adrianoads910@gmail.com" className="px-6 py-3 border border-slate-300 dark:border-slate-700 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition flex items-center gap-2 font-medium text-slate-700 dark:text-slate-200">
-            <Icons.Mail /> Contato
+            <Icons.Mail /> Email
           </a>
           <a href="https://github.com/adrianoads910-max" target="_blank" rel="noreferrer" className="px-6 py-3 border border-slate-300 dark:border-slate-700 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition flex items-center gap-2 font-medium text-slate-700 dark:text-slate-200">
             <Icons.GitHub /> GitHub
