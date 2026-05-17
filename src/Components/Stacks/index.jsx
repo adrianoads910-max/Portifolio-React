@@ -6,23 +6,23 @@ export const Stacks = () => {
     {
       category: "Frontend",
       icon: <Icons.Code />,
-      items: ["React", "Angular", "TypeScript", "Tailwind CSS", "Ionic"]
+      items: ["React.Js/Native", "Angular", "TypeScript", "Tailwind CSS", "Ionic"]
     },
     {
       category: "Backend",
       icon: <Icons.Database />,
-      items: ["Python", "Node.js", "SQL (MySQL/SQLite)", "Flask", "APIs REST"]
+      items: ["Nest.Js","Python", "Node.js", "SQL (MySQL/SQLite/Postgress)", "Flask", "APIs REST"]
     },
     {
       category: "Ferramentas",
       icon: <Icons.Terminal />,
-      items: ["Git & GitHub", "Figma", "Firebase", "Adobe Photoshop"]
+      items: ["Git & GitHub","Docker", "Figma", "Firebase", "Adobe Photoshop"]
     },
-    {
-      category: "Ciência & Dados",
-      icon: <Icons.Chart />,
-      items: ["Análise de Dados", "Lógica Matemática", "Resolução de Problemas", "Precisão Técnica"]
-    }
+     {
+      category: "Cloud",
+      icon: <Icons.Chart  />,
+      items: ["GCP", "AWS"]
+    },
   ];
 
   return (

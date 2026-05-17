@@ -10,7 +10,17 @@ export const Experience = () => {
       yearEnd: "Atual",
       fullDate: "Mar 2026 - Presente",
       description: "Atuação no ciclo completo de desenvolvimento. Criação de interfaces dinâmicas com React e APIs robustas, garantindo integração eficiente entre frontend e backend.",
-      techs: ["React", "Python", "SQL", "VueJs", "API"]
+      techs: ["React.Js/Native", "Python", "MySQL", "Docker", "GCP", "API"]
+    },
+     {
+      company: "100 Contas",
+      url: "https://100contas.com/", 
+      role: "Freelancer Desenvolvedor FullStack",
+      yearStart: "2026",
+      yearEnd: "Atual",
+      fullDate: "Maio 2026 - Presente",
+      description: "Desenvolvimento e manutenção de APIs REST, incluindo integrações com serviços externos e comunicação entre sistemas.",
+      techs: ["React", "Nest.Js", "Postgress", "Docker", "API"]
     },
     {
       company: "CYRRUS",

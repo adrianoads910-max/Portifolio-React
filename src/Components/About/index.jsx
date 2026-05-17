@@ -13,7 +13,7 @@ export const About = () => {
         <p className="text-lg text-slate-600 dark:text-slate-400 max-w-lg leading-relaxed">
           Experiência prática na criação de componentes reutilizáveis e integração de
 sistemas, usando 
-          <strong> React, Python e Angular</strong>.
+          <strong> React.Js/Native, Nest.Js</strong>.
         </p>
         <div className="flex flex-wrap gap-4 pt-4">
           <a 
